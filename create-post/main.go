@@ -105,7 +105,6 @@ func main() {
 
 		insertData.CustomerId = postData.CustomerId
 		insertData.CustomerName = postData.CustomerName
-		insertData.Photo = postData.Photo
 		insertData.CreatedOn = postData.CreatedOn
 		insertData.UpdatedOn = postData.UpdatedOn
 		insertData.Status = postData.Status
@@ -114,9 +113,10 @@ func main() {
 		insertData.Pic = postData.Pic
 		insertData.Phone = postData.Phone
 		insertData.Product = postData.Product
+		insertData.ProductId = postData.ProductId
 		insertData.Chanel = postData.Chanel
 		insertData.Description = postData.Description
-		insertData.UserId = postData.UserId
+		insertData.UserId = "1"
 
 		json.Unmarshal(r.Body, &insertData)
 		postController := v1.ServiceContainer().InjectPostController()

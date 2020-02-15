@@ -107,6 +107,7 @@ func main() {
 
 		insertData.CustomerId = postData.CustomerId
 		insertData.CustomerName = postData.CustomerName
+		insertData.ProductId = postData.ProductId
 		insertData.UserId = postData.UserId
 		insertData.Chanel = postData.Chanel
 		insertData.Description = postData.Description
@@ -116,7 +117,6 @@ func main() {
 		insertData.Price = postData.Price
 		insertData.Notes = postData.Notes
 		insertData.Status = postData.Status
-		insertData.Photo = postData.Photo
 		insertData.CreatedOn = postData.CreatedOn
 		insertData.UpdatedOn = postData.UpdatedOn
 
